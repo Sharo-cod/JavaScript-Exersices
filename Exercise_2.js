@@ -10,8 +10,26 @@
 
 
 // =======================================================
+// # 2
 
-const firstHalf = (str) => str.slice(0,str.length / 2);
-console.log(firstHalf('SHARIQ'));
-console.log(firstHalf('SHARIQALAM'));
-console.log(firstHalf('SHARIQ ALAM'));
+// const firstHalf = (str) => str.slice(0,str.length / 2);
+// console.log(firstHalf('SHARIQ'));
+// console.log(firstHalf('SHARIQALAM'));
+// console.log(firstHalf('SHARIQ ALAM'));
+
+// ========================================================
+// # 3
+
+// const concatenate = (str1, str2) => 
+//     str1.slice(1) + str2.slice(1);
+
+// console.log(concatenate('abc' ,'def'));
+// console.log(concatenate('Junior' , 'Developer'));
+
+// ==========================================================
+// # 4 
+const closetTo100 = (a,b) => (100 - a) < (100 - b) ? a : b ;
+
+console.log(closetTo100(99, 1));
+console.log(closetTo100(49, 51));
+console.log(closetTo100(50, 50));    
