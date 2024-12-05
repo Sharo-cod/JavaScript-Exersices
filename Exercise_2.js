@@ -30,6 +30,20 @@
 // # 4 
 const closetTo100 = (a,b) => (100 - a) < (100 - b) ? a : b ;
 
-console.log(closetTo100(99, 1));
-console.log(closetTo100(49, 51));
-console.log(closetTo100(50, 50));    
+// console.log(closetTo100(99, 1));
+// console.log(closetTo100(49, 51));
+// console.log(closetTo100(50, 50));    
+
+// ===========================================================
+
+// #5
+const countChars = (str , char) => 
+    str.split('').filter(ch => ch === char).length;
+
+const contains2To4 = (str,char) =>
+    countChars(str,char) >= 2 && countChars(str,char) <= 4 ;
+console.log(contains2To4('ooh!' , 'o'));
+console.log(contains2To4('oh!' , 'o'));
+console.log(contains2To4('oooh!' , 'o'));
+console.log(contains2To4('ooooh!' , 'o'));
+console.log(contains2To4('oooooh!' , 'o'));
